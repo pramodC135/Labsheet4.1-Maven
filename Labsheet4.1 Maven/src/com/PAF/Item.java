@@ -17,7 +17,7 @@ public class Item {
 				con= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/it18199086","root","");
 				
 				//For testing
-				System.out.print("Successfully Connected");
+				//System.out.print("Successfully Connected");
 			}
 			catch(Exception e)
 			{
@@ -40,8 +40,8 @@ public class Item {
 				return "Error while connecting to the database";
 			}
 			
-			// Create a prepared statement
-			String query = "insert into items('itemID','itemCode','itemName','itemPrice',)"+" values(?, ?, ?, ?, ?)";
+			// Create a prepared statement 'itemID', ?,
+			String query = "insert into items('itemCode','itemName','itemPrice','itemDesc')"+" values( ?, ?, ?, ?)";
 			PreparedStatement preparedStmt = con.prepareStatement(query);
 			
 			//blinding values
@@ -108,9 +108,9 @@ public class Item {
 				output += "<td><input name='btnUpdate' "
 						+ "type='button' value='Update'></td>"
 						+ "<td><form method='post' action='items.jsp'>"
-						+"input name=''btnRemove' "
+						+"<input name=''btnRemove' "
 						+ "type='submit' value='Remove'>"
-						+"input name='itemID' type= 'hidden' "
+						+"<input name='itemID' type= 'hidden' "
 						+ "value='" + itemID +"'>" + "</form></td></tr>";
 			}
 			

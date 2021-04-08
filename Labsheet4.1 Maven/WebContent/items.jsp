@@ -4,7 +4,7 @@
 
 <%
 //Insert item----------------------------------
-if (request.getParameter("itemcode") != null)
+if (request.getParameter("itemCode") != null)
 {
 	Item itemObj = new Item();
 		String stsMsg = itemObj.insertItem(request.getParameter("itemCode"),
