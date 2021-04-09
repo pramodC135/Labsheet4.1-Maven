@@ -1,7 +1,7 @@
 <%@page import="com.PAF.Item" %>
 <%@page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
+    
 <%
 	//Insert item----------------------------------
 	if (request.getParameter("itemCode") != null)
@@ -34,9 +34,18 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="Views/bootstrap.css">
 <title>Items Management</title>
 </head>
 <body>
+
+	<div class="container">
+					<div class="row">
+							<div class="col">
+							
+							</div>
+					</div>
+	</div>
 	<h1>Items Management</h1>
 	<form method="post" action="items.jsp">
 		Item code: <input name="itemCode" type="text"><br>
