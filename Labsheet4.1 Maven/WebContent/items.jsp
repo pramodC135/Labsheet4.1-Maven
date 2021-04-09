@@ -3,29 +3,31 @@
     pageEncoding="ISO-8859-1"%>
 
 <%
-//Insert item----------------------------------
-if (request.getParameter("itemCode") != null)
-{
-	Item itemObj = new Item();
-		String stsMsg = itemObj.insertItem(request.getParameter("itemCode"),
-				request.getParameter("itemName"),
-				request.getParameter("itemPrice"),
-				request.getParameter("itemDesc"));
-		
-	session.setAttribute("statusMsg", stsMsg);
-	//itemObj.connect(); //For testing the connect method
-	//session.setAttribute("itemCome", request.getParameter("itemCome"));
-	//session.setAttribute("itemName", request.getParameter("itemName"));
-	//session.setAttribute("itemPrice", request.getParameter("itemPrice"));
-	//session.setAttribute("itemDesc", request.getParameter("itemDesc"));
-	}
-
-//Remove Item-------------------------------------
-if(request.getParameter("itemID") !=null)
-{
-
+	//Insert item----------------------------------
+	if (request.getParameter("itemCode") != null)
+	{
+		Item itemObj = new Item();
+			String stsMsg = itemObj.insertItem(request.getParameter("itemCode"),
+					request.getParameter("itemName"),
+					request.getParameter("itemPrice"),
+					request.getParameter("itemDesc"));
+			
+		session.setAttribute("statusMsg", stsMsg);
+		//itemObj.connect(); //For testing the connect method
+		//session.setAttribute("itemCome", request.getParameter("itemCome"));
+		//session.setAttribute("itemName", request.getParameter("itemName"));
+		//session.setAttribute("itemPrice", request.getParameter("itemPrice"));
+		//session.setAttribute("itemDesc", request.getParameter("itemDesc"));
+		}
 	
-}
+	//Remove Item-------------------------------------
+	if(request.getParameter("itemID") !=null)
+	{
+		Item itemObj = new Item();
+		String stsMsg = itemObj.deleteItem(request.getParameter("itemID"));
+		session.setAttribute("statusMsg", stsMsg);
+		
+	}
 %>    
 
 <!DOCTYPE html>

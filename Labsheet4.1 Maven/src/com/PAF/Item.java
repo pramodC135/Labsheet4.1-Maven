@@ -158,10 +158,8 @@ public class Item {
 			output = "Error while deleting the item.";
 			System.err.println(e.getMessage());
 		}
-		
-		
+	
 		return output;
 	}
 	
-
 }
