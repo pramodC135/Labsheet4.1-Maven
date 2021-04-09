@@ -19,6 +19,13 @@ if (request.getParameter("itemCode") != null)
 	//session.setAttribute("itemPrice", request.getParameter("itemPrice"));
 	//session.setAttribute("itemDesc", request.getParameter("itemDesc"));
 	}
+
+//Remove Item-------------------------------------
+if(request.getParameter("itemID") !=null)
+{
+
+	
+}
 %>    
 
 <!DOCTYPE html>
