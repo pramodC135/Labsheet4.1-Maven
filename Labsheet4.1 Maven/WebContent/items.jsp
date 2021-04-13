@@ -39,6 +39,8 @@
 <meta name="viewport" content="width=divice-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script> 
+<script src="js/popper.min.js" type="text/javascript"></script>
+
 
 <title>Items Management</title>
 </head>
@@ -144,6 +146,85 @@
 								</div> 
 								<hr>
 								
+								
+								<div class="container"> 
+								 	<h2>Contextual Colors</h2> 
+								 	<p>Use the contextual classes to provide "meaning through colors":</p> 
+								 	<p class="text-muted">This text is muted.</p> 
+								 	<p class="text-primary">This text is important.</p> 
+								 	<p class="text-success">This text indicates success.</p> 
+								 	<p class="text-info">This text represents some information.</p> 
+								 	<p class="text-warning">This text represents a warning.</p> 
+								 	<p class="text-danger">This text represents danger.</p> 
+								</div> 
+								<hr>
+								
+								<div class="container"> 
+								 	<h2>Contextual Backgrounds</h2> 
+								 	<p>Use the contextual background classes to provide "meaning through colors":</p> 
+								 	<p class="bg-primary">This text is important.</p> 
+								 	<p class="bg-success">This text indicates success.</p> 
+								 	<p class="bg-info">This text represents some information.</p> 
+								 	<p class="bg-warning">This text represents a warning.</p> 
+								 	<p class="bg-danger">This text represents danger.</p> 
+								</div> 
+								<hr>
+								
+								
+								<div class="container"> 
+								 	<h2>Basic Table</h2> 
+								 	<table class="table"> 
+								 	<thead> 
+								 	<tr> 
+								 	<th>Firstname</th> 
+								 	<th>Lastname</th> 
+								 	<th>Email</th> 
+								 	</tr> 
+								 	</thead> 
+								 	<tbody> 
+								 	<tr> 
+								 	<td>John</td> 
+								 	<td>Doe</td> 
+								 	<td>john@example.com</td> 
+								 	</tr> 
+								 	</tbody> 
+								 	</table> 
+								</div> 
+								<hr> 
+								
+								<div class="container"> 
+								 	<h2>Dropdowns</h2> 
+								 	<div class="dropdown"> 
+								 		<button class="btn btn-primary dropdown-toggle" type="button" datatoggle="dropdown">Dropdown Example <span class="caret"></span></button> 
+								 		<ul class="dropdown-menu"> 
+								 			<li><a href="#">HTML</a></li> 
+								 			<li><a href="#">CSS</a></li> 
+								 			<li><a href="#">JavaScript</a></li> 
+								 		</ul> 
+								 	</div> 
+								</div> 
+								<hr>
+								
+								<div class="container">
+								 	<h2>Vertical (basic) form</h2> 
+								 	<form action=""> 
+								 		<div class="form-group"> 
+								 			<label for="email">Email:</label> 
+								 			<input type="email" class="form-control" id="email" placeholder="Enter email" name="email"> 
+								 		</div> 
+								 		<div class="form-group"> 
+								 			<label for="pwd">Password:</label> 
+								 			<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd"> 
+								 		</div> 
+								 		<div class="checkbox"> 
+								 			<label><input type="checkbox" name="remember"> Remember me</label> 
+								 		</div> 
+								 		<button type="submit" class="btn btn-default">Submit</button> 
+								 	</form> 
+								</div> 
+								<hr> 
+								
+									
 							</div>
 					</div>
 	</div>
