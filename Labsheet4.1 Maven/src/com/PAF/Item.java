@@ -37,7 +37,7 @@ public class Item {
 			Connection con = connect();
 			if (con==null)
 			{
-				return "Error while connecting to the database";
+				return "Error while connecting to the database!";
 			}
 			
 			// Create a prepared statement 'itemID', ?,
