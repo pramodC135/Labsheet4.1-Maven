@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Labsheet4.1 Maven/src"/>
+	<classpathentry kind="lib" path="Labsheet4.1 Maven/WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="Labsheet4.1 Maven/WebContent/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
+	<classpathentry kind="output" path="Labsheet4.1 Maven/target/classes"/>
+</classpath>
