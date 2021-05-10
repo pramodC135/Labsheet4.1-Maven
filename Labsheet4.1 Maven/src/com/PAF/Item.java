@@ -106,7 +106,7 @@ public class Item {
 				
 				// Buttons
 				output += "<td><input name='btnUpdate' "
-						+ "type='button' value='Update' class='btn btn-danger'></td>"
+						+ "type='button' value='Update' class='btn btn-secondary'></td>"
 						+ "<td><form method='post' action='items.jsp'>"
 						+"<input name=''btnRemove' "
 						+ "type='submit' value='Remove' class='btn btn-danger'>"
